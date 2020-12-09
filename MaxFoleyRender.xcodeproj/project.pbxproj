@@ -1,0 +1,505 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9429D09C200F2C2B005D3ABE /* SDL2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9429D09B200F2C2B005D3ABE /* SDL2.framework */; };
+		9429D09E200F2D0B005D3ABE /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9429D09D200F2D0B005D3ABE /* Cocoa.framework */; };
+		9429D0A32015AAC3005D3ABE /* libpng.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9429D0A22015AAC3005D3ABE /* libpng.a */; };
+		9429D0A82015ABE1005D3ABE /* libpng.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9429D0A42015ABE1005D3ABE /* libpng.dylib */; };
+		9429D0A92015ABE1005D3ABE /* libpng16.16.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9429D0A52015ABE1005D3ABE /* libpng16.16.dylib */; };
+		9429D0AA2015ABE1005D3ABE /* libpng16.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9429D0A62015ABE1005D3ABE /* libpng16.a */; };
+		9429D0AB2015ABE1005D3ABE /* libpng16.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9429D0A72015ABE1005D3ABE /* libpng16.dylib */; };
+		9429D0AE2015B33F005D3ABE /* libpngwriter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9429D0AC2015B33F005D3ABE /* libpngwriter.a */; };
+		9429D0AF2015B33F005D3ABE /* libpngwriter.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9429D0AD2015B33F005D3ABE /* libpngwriter.dylib */; };
+		946014B4257DCC05005FD87B /* MaxFoleyRenderTest.mm in Sources */ = {isa = PBXBuildFile; fileRef = 946014B3257DCC05005FD87B /* MaxFoleyRenderTest.mm */; };
+		946014BD257E04A1005FD87B /* common.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 946014BC257E04A1005FD87B /* common.cpp */; };
+		946720061FCB7404004D5287 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 946720051FCB7404004D5287 /* main.cpp */; };
+		946A9C592245462A00BC2D17 /* SceneObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 946A9C532245462A00BC2D17 /* SceneObject.cpp */; };
+		94DE56CE201E671B004B1FBF /* Raycaster.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 94DE56CD201E671B004B1FBF /* Raycaster.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		946720001FCB7404004D5287 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 7;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		9429D09B200F2C2B005D3ABE /* SDL2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2.framework; path = ../../../../../Library/Frameworks/SDL2.framework; sourceTree = "<group>"; };
+		9429D09D200F2D0B005D3ABE /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		9429D0A22015AAC3005D3ABE /* libpng.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libpng.a; path = ../../../../../opt/local/lib/libpng.a; sourceTree = "<group>"; };
+		9429D0A42015ABE1005D3ABE /* libpng.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libpng.dylib; path = ../../../../../opt/local/lib/libpng.dylib; sourceTree = "<group>"; };
+		9429D0A52015ABE1005D3ABE /* libpng16.16.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libpng16.16.dylib; path = ../../../../../opt/local/lib/libpng16.16.dylib; sourceTree = "<group>"; };
+		9429D0A62015ABE1005D3ABE /* libpng16.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libpng16.a; path = ../../../../../opt/local/lib/libpng16.a; sourceTree = "<group>"; };
+		9429D0A72015ABE1005D3ABE /* libpng16.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libpng16.dylib; path = ../../../../../opt/local/lib/libpng16.dylib; sourceTree = "<group>"; };
+		9429D0AC2015B33F005D3ABE /* libpngwriter.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libpngwriter.a; path = ../../../../../opt/local/lib/libpngwriter.a; sourceTree = "<group>"; };
+		9429D0AD2015B33F005D3ABE /* libpngwriter.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libpngwriter.dylib; path = ../../../../../opt/local/lib/libpngwriter.dylib; sourceTree = "<group>"; };
+		946014B1257DCC05005FD87B /* MaxFoleyRenderTest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MaxFoleyRenderTest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		946014B3257DCC05005FD87B /* MaxFoleyRenderTest.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = MaxFoleyRenderTest.mm; sourceTree = "<group>"; };
+		946014B5257DCC05005FD87B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		946014B9257DD3B8005FD87B /* Test.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Test.h; sourceTree = "<group>"; };
+		946014BA257DD456005FD87B /* MakeDefaultScenes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MakeDefaultScenes.h; sourceTree = "<group>"; };
+		946014BB257DFF61005FD87B /* common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = common.h; sourceTree = "<group>"; };
+		946014BC257E04A1005FD87B /* common.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = common.cpp; sourceTree = "<group>"; };
+		946014BE257E9D12005FD87B /* ExperimentalRenders.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExperimentalRenders.h; sourceTree = "<group>"; };
+		946720021FCB7404004D5287 /* MaxFoleyRender */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MaxFoleyRender; sourceTree = BUILT_PRODUCTS_DIR; };
+		946720051FCB7404004D5287 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		946A9C4E224545E600BC2D17 /* Camera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Camera.h; sourceTree = "<group>"; };
+		946A9C4F224545F100BC2D17 /* Color.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Color.h; sourceTree = "<group>"; };
+		946A9C502245460500BC2D17 /* Light.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Light.h; sourceTree = "<group>"; };
+		946A9C512245461500BC2D17 /* Material.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Material.h; sourceTree = "<group>"; };
+		946A9C522245462A00BC2D17 /* Scene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Scene.h; sourceTree = "<group>"; };
+		946A9C532245462A00BC2D17 /* SceneObject.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SceneObject.cpp; sourceTree = "<group>"; };
+		946A9C542245462A00BC2D17 /* SceneObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SceneObject.h; sourceTree = "<group>"; };
+		946A9C552245462A00BC2D17 /* Surfel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Surfel.h; sourceTree = "<group>"; };
+		946A9C562245462A00BC2D17 /* Tri.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tri.h; sourceTree = "<group>"; };
+		946A9C572245462A00BC2D17 /* TriTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TriTree.h; sourceTree = "<group>"; };
+		946A9C582245462A00BC2D17 /* Vector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vector.h; sourceTree = "<group>"; };
+		946A9C5A2245464A00BC2D17 /* Ray.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Ray.h; sourceTree = "<group>"; };
+		9493ADEC2033D542002917BC /* Box.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Box.h; sourceTree = "<group>"; };
+		94DE56CC201E6629004B1FBF /* Raycaster.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Raycaster.h; sourceTree = "<group>"; };
+		94DE56CD201E671B004B1FBF /* Raycaster.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Raycaster.cpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		946014AE257DCC05005FD87B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94671FFF1FCB7404004D5287 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9429D0AE2015B33F005D3ABE /* libpngwriter.a in Frameworks */,
+				9429D0AF2015B33F005D3ABE /* libpngwriter.dylib in Frameworks */,
+				9429D0A82015ABE1005D3ABE /* libpng.dylib in Frameworks */,
+				9429D0A92015ABE1005D3ABE /* libpng16.16.dylib in Frameworks */,
+				9429D0AA2015ABE1005D3ABE /* libpng16.a in Frameworks */,
+				9429D0AB2015ABE1005D3ABE /* libpng16.dylib in Frameworks */,
+				9429D0A32015AAC3005D3ABE /* libpng.a in Frameworks */,
+				9429D09E200F2D0B005D3ABE /* Cocoa.framework in Frameworks */,
+				9429D09C200F2C2B005D3ABE /* SDL2.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9429D09A200F2C2B005D3ABE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9429D0AC2015B33F005D3ABE /* libpngwriter.a */,
+				9429D0AD2015B33F005D3ABE /* libpngwriter.dylib */,
+				9429D0A42015ABE1005D3ABE /* libpng.dylib */,
+				9429D0A52015ABE1005D3ABE /* libpng16.16.dylib */,
+				9429D0A62015ABE1005D3ABE /* libpng16.a */,
+				9429D0A72015ABE1005D3ABE /* libpng16.dylib */,
+				9429D0A22015AAC3005D3ABE /* libpng.a */,
+				9429D09D200F2D0B005D3ABE /* Cocoa.framework */,
+				9429D09B200F2C2B005D3ABE /* SDL2.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		946014B2257DCC05005FD87B /* MaxFoleyRenderTest */ = {
+			isa = PBXGroup;
+			children = (
+				946014B3257DCC05005FD87B /* MaxFoleyRenderTest.mm */,
+				946014B5257DCC05005FD87B /* Info.plist */,
+			);
+			path = MaxFoleyRenderTest;
+			sourceTree = "<group>";
+		};
+		94671FF91FCB7404004D5287 = {
+			isa = PBXGroup;
+			children = (
+				946720041FCB7404004D5287 /* MaxFoleyRender */,
+				946014B2257DCC05005FD87B /* MaxFoleyRenderTest */,
+				946720031FCB7404004D5287 /* Products */,
+				9429D09A200F2C2B005D3ABE /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		946720031FCB7404004D5287 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				946720021FCB7404004D5287 /* MaxFoleyRender */,
+				946014B1257DCC05005FD87B /* MaxFoleyRenderTest.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		946720041FCB7404004D5287 /* MaxFoleyRender */ = {
+			isa = PBXGroup;
+			children = (
+				9493ADEC2033D542002917BC /* Box.h */,
+				946A9C4F224545F100BC2D17 /* Color.h */,
+				946A9C4E224545E600BC2D17 /* Camera.h */,
+				946A9C502245460500BC2D17 /* Light.h */,
+				946720051FCB7404004D5287 /* main.cpp */,
+				946A9C512245461500BC2D17 /* Material.h */,
+				946A9C5A2245464A00BC2D17 /* Ray.h */,
+				94DE56CD201E671B004B1FBF /* Raycaster.cpp */,
+				94DE56CC201E6629004B1FBF /* Raycaster.h */,
+				946A9C522245462A00BC2D17 /* Scene.h */,
+				946A9C532245462A00BC2D17 /* SceneObject.cpp */,
+				946A9C542245462A00BC2D17 /* SceneObject.h */,
+				946A9C552245462A00BC2D17 /* Surfel.h */,
+				946A9C562245462A00BC2D17 /* Tri.h */,
+				946A9C572245462A00BC2D17 /* TriTree.h */,
+				946A9C582245462A00BC2D17 /* Vector.h */,
+				946014B9257DD3B8005FD87B /* Test.h */,
+				946014BA257DD456005FD87B /* MakeDefaultScenes.h */,
+				946014BB257DFF61005FD87B /* common.h */,
+				946014BC257E04A1005FD87B /* common.cpp */,
+				946014BE257E9D12005FD87B /* ExperimentalRenders.h */,
+			);
+			path = MaxFoleyRender;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		946014B0257DCC05005FD87B /* MaxFoleyRenderTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 946014B8257DCC05005FD87B /* Build configuration list for PBXNativeTarget "MaxFoleyRenderTest" */;
+			buildPhases = (
+				946014AD257DCC05005FD87B /* Sources */,
+				946014AE257DCC05005FD87B /* Frameworks */,
+				946014AF257DCC05005FD87B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MaxFoleyRenderTest;
+			productName = MaxFoleyRenderTest;
+			productReference = 946014B1257DCC05005FD87B /* MaxFoleyRenderTest.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		946720011FCB7404004D5287 /* MaxFoleyRender */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 946720091FCB7404004D5287 /* Build configuration list for PBXNativeTarget "MaxFoleyRender" */;
+			buildPhases = (
+				94671FFF1FCB7404004D5287 /* Frameworks */,
+				94671FFE1FCB7404004D5287 /* Sources */,
+				946720001FCB7404004D5287 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MaxFoleyRender;
+			productName = MaxFoleyRender;
+			productReference = 946720021FCB7404004D5287 /* MaxFoleyRender */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		94671FFA1FCB7404004D5287 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Maxwell Foley";
+				TargetAttributes = {
+					946014B0257DCC05005FD87B = {
+						CreatedOnToolsVersion = 10.2;
+						ProvisioningStyle = Automatic;
+					};
+					946720011FCB7404004D5287 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 94671FFD1FCB7404004D5287 /* Build configuration list for PBXProject "MaxFoleyRender" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				en,
+			);
+			mainGroup = 94671FF91FCB7404004D5287;
+			productRefGroup = 946720031FCB7404004D5287 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				946720011FCB7404004D5287 /* MaxFoleyRender */,
+				946014B0257DCC05005FD87B /* MaxFoleyRenderTest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		946014AF257DCC05005FD87B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		946014AD257DCC05005FD87B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				946014B4257DCC05005FD87B /* MaxFoleyRenderTest.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94671FFE1FCB7404004D5287 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				946014BD257E04A1005FD87B /* common.cpp in Sources */,
+				946720061FCB7404004D5287 /* main.cpp in Sources */,
+				946A9C592245462A00BC2D17 /* SceneObject.cpp in Sources */,
+				94DE56CE201E671B004B1FBF /* Raycaster.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		946014B6257DCC05005FD87B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = MaxFoleyRenderTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = pb.MaxFoleyRenderTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		946014B7257DCC05005FD87B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = MaxFoleyRenderTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = pb.MaxFoleyRenderTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		946720071FCB7404004D5287 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		946720081FCB7404004D5287 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		9467200A1FCB7404004D5287 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					/opt/local/include,
+					/usr/local/include,
+				);
+				LIBRARY_SEARCH_PATHS = (
+					/opt/local/lib,
+					/usr/local/lib,
+				);
+				OTHER_LDFLAGS = "-larmadillo";
+				"OTHER_LDFLAGS[arch=*]" = (
+					"-larmadillo",
+					"-lfreetype",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		9467200B1FCB7404004D5287 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					/opt/local/include,
+					/usr/local/include,
+				);
+				LIBRARY_SEARCH_PATHS = (
+					/opt/local/lib,
+					/usr/local/lib,
+				);
+				OTHER_LDFLAGS = "-larmadillo";
+				"OTHER_LDFLAGS[arch=*]" = (
+					"-larmadillo",
+					"-lfreetype",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		946014B8257DCC05005FD87B /* Build configuration list for PBXNativeTarget "MaxFoleyRenderTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				946014B6257DCC05005FD87B /* Debug */,
+				946014B7257DCC05005FD87B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		94671FFD1FCB7404004D5287 /* Build configuration list for PBXProject "MaxFoleyRender" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				946720071FCB7404004D5287 /* Debug */,
+				946720081FCB7404004D5287 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		946720091FCB7404004D5287 /* Build configuration list for PBXNativeTarget "MaxFoleyRender" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9467200A1FCB7404004D5287 /* Debug */,
+				9467200B1FCB7404004D5287 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 94671FFA1FCB7404004D5287 /* Project object */;
+}
